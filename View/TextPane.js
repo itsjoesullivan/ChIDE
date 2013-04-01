@@ -1,6 +1,8 @@
 var TextPane = Backbone.View.extend({
 	initialize: function() {
-		var editor = ace.edit(this.el);
+		this.editor = ace.edit(this.el);
 	},
-	render: function() {}
+	render: function(session) {
+		this.editor.setSession(session);
+	}
 });

@@ -20,6 +20,14 @@ var Chide = Backbone.Model.extend({
 				this.get('docs').add(doc);
 		}
 		
+		this.on('change:selectedDoc', function() {
+			this.get('textPane').render(this.get('selectedDoc').get('editSession'));
+		})
+		
+		//Start the ball rolling by selecting the first document.
+		this.set({
+			selectedDoc: this.get('docs').at(0)
+		});
 		
 	}
 });
