@@ -5,6 +5,7 @@ chrome.app.runtime.onLaunched.addListener(function(launchData) {
   }, function(w) {
       w.contentWindow.win = w;
       w.contentWindow.launchData = launchData;
+		w.contentWindow.firstDoc = "First doc!";
       w.show();
   });
 });
