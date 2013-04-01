@@ -20,8 +20,8 @@
       "notifications"
   ],
   "icons": { 
-    "256": "chide-256.png",
-    "128": "chide-128.png",
-    "16": "chide-16.png" 
+    "256": "images/chide-256.png",
+    "128": "images/chide-128.png",
+    "16": "images/chide-16.png" 
   }
 }
