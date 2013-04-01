@@ -1,0 +1,4 @@
+ChIDE
+=====
+
+IDE for ChromeOS
